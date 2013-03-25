@@ -16,12 +16,12 @@ public class ride {
         String st = f.readLine().trim();
         int i1 = 1;
         for (int i = 0; i < st.length(); i++) {
-            i1 *= (int) (st.charAt(i) - 'A' + 1);
+            i1 *= (st.charAt(i) - 'A' + 1);
         }
         st = f.readLine().trim();
         int i2 = 1;
         for (int i = 0; i < st.length(); i++) {
-            i2 *= (int) (st.charAt(i) - 'A' + 1);
+            i2 *= (st.charAt(i) - 'A' + 1);
         }
         if (i1 % 47 == i2 % 47) {
             out.println("GO");
